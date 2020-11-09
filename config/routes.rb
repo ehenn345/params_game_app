@@ -8,5 +8,7 @@ Rails.application.routes.draw do
   # end
   namespace :api do
     get '/do_params' => "parameter#all_caps"
-  end
+    get "/guess_a_number/:number" => "parameter#number_game"
+    post "/body_params" => "parameter#body"
+   end
 end
