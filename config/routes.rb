@@ -10,5 +10,8 @@ Rails.application.routes.draw do
     get '/do_params' => "parameter#all_caps"
     get "/guess_a_number/:number" => "parameter#number_game"
     post "/body_params" => "parameter#body"
+    post "/guess_a_number" => "parameter#number"
+    post "/weird_route" => "parameter#strange"
+    
    end
 end

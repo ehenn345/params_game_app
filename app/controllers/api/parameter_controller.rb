@@ -33,5 +33,16 @@ class Api::ParameterController < ApplicationController
     end
     render 'body.json.jb'
   end
-  
+
+  def strange
+    if params[:username] == "hugh"
+      if params[:password] == "swordfish"
+        @message = "Valid credentials"
+      else
+        @message = "Invalid credentials"
+      end
+
+      render 'weird.json.jb'
+    end
+  end
 end
